@@ -1,0 +1,8 @@
+to copy a repo into our system:
+git clone "RepoLink"-----copies the given repo into the computer.copy of repo in server can be called as remote repo and in our computer is called as local repo
+
+template:
+git clone https://<PAT>@Repo_link
+to do push commands without authentication everytime
+
+to push content into the repo that is to copy the from local repo to remote repo, the commands are:
