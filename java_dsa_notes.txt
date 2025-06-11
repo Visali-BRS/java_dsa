@@ -89,6 +89,40 @@ _______________________________________
 **ctrl shift u ----> upper case
   ctrl u ---> lower case
 _______________________________________
+JAVA PROGRAM STRUCTURE:
 
+DISADVANTAGES OF C++:
+main() must be a global function.
+Global functions were allowed. Thus the solutions (apps.software) created with neither procedural nor OO.
+global variables are still allowed in C++.
+Files are loaded using macros and stored till end of the program
+pointers were always a mess to many a programmers
+The onus of creating and deleting objects in the Heap is on programmer.
+The inheritance is by default private which makes the accessing the inherited properties very difficult.
+Multiple inheritance creates a solution which is low cohesive.
+The operator overloading concept can be used to just implement anything which is unnecessary
+The compiler creates object file which is environment restricted/specific/dependent.
+Handling  runtime errors is difficult.
+Objects can be created in Stack area as well.
+Array is primitive in C++
+_______________________________________
+Java:
+No global functions. All are only methods. So you have strict OO solution.
+No global variables.
+signed and unsigned removed. Thus the primitive DTs are simplified.
+libraries can be loaded and used dynamically (No pre-processors)
+Pointers are abstracted and users are given references.
+All objects are created in Heap only
+Array is an object in java
+Creating object is the only job the programmer does. Object deletion is automated with the concept GRABAGE COLLECTOR.
+The inheritance is always public in Java
+There is no Multiple inheritance. All classes are always High cohesive. Thus the implementation is very easy.
+The only operator that can be overloaded is + and only for string concatination.
+The compiler creates bytecode which is environment(OS) independent.
+Handling  runtime errors is easy via exception Handling.
+The friend concept is removed. Thus no more ambiguous and complex classes.
+_______________________________________
 #include----> # is preprocessor or macros include is used to load
+_______________________________________
+my_function(args*)---->function def like this in python can take ny number of parameters->python
 _______________________________________
