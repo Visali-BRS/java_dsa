@@ -1,8 +1,94 @@
+9-06-2025: Session-2
+
+
 to copy a repo into our system:
 git clone "RepoLink"-----copies the given repo into the computer.copy of repo in server can be called as remote repo and in our computer is called as local repo
 
 template:
-git clone https://<PAT>@Repo_link
+$git clone https://<PAT>@Repo_link
 to do push commands without authentication everytime
 
 to push content into the repo that is to copy the from local repo to remote repo, the commands are:
+steps and commands:
+1)first ask the git to list down all the files that need to be pushed
+$git add path
+git add c:/learning/java_dsa or
+git add .   --- . means current path
+
+2)ask the git to create a secured object in which all the files to be pushed are copied.
+$ git commit -m "java dsa notes added"
+
+3)push (upload):
+$git push (Always push to main branch) or 
+$git push origin main
+
+$) check status:
+$git status
+
+
+
+in vscode ----> ctrl+g takes from any line to required line
+
+----------> Primitive types in java:
+NUmeric: 
+number only-> byte ,short, int, long
+with precision->float , double
+CHar: boolean--1 bit
+_______________________________________
+Arithematic operators: + - * / %
+all are binary operators....since all operators take two operands
+expression is written using INFIX notation
+i/p are  numbers and o/p is also a number
+
+bodmas rule and power operator has highest precedence andd it has right to left associativity when an expression has two power operators ex 2**3**2---> frst 3**2=9 and the 2**9
+every infix operation is frst converte to postfix and then evaluated
+
+float num=5.5f;
+if float num=5.5;  it is error cuz it is considered as double.
+
+every c program is a cpp program...but not viceversa as cpp is superset of c and cpp inherited c.
+
+sum=5+5.5---> when expression has different data types the lower size data type converted to higher size data type and then the expression is evaluated.cuz data should not be lost that is the decimal part of the data....
+_______________________________________
+DAY2::::
+
+Relational operators:
+> < >= <= != ==
+
+i/p are numbers and o/p is boolean--1all afe binary operators and used with infix notation....
+lesser precedence than arithematic operators...higher than logidcal operators...
+
+for(i=1;i<=20;i++) more readable than for(i=1;i<21;i++)
+
+[10,40] closed interval 10 to 40
+(23,30) open interval 24 to 29
+[35,65) right open 35 to 64
+
+i=10;
+j=5;
+i++;
+--j;
+b[j]--;
+
+i=10;
+j=5;
+a[++=]=b[--j]--;
+_______________________________________
+Logical operators: & && | || !
+
+i/p are boolean and o/p is also boolean
+all are binary operators except the not  operatorslesser precedence than arithematic and relational but has higher precedence than assignment.
+
+pre increment and post increment operators have lesser precedence than assignment.
+
+Dot operator : object.field
+parenthesis has highest priority
+not an operator but used to override the precedence of an operator
+_______________________________________
+
+**ctrl shift u ----> upper case
+  ctrl u ---> lower case
+_______________________________________
+
+#include----> # is preprocessor or macros include is used to load
+_______________________________________
