@@ -214,3 +214,205 @@ _______________________________________
 _______________________________________
 my_function(args*)---->function def like this in python can take ny number of parameters->python
 _______________________________________
+super refers to immediate parent function.
+_______________________________________
+non static methods are instance methods---public void myfunction(){}
+/0 end of string char in cpp
+		Flight flight =new Flight();
+Flight is class flight is reference variable of FLight
+jvm calls main function and frame for main function is created and instances are created inside it
+main is a static method
+_______________________________________
+round()
+ceil()----> 7.8899=7, 7.0001=7
+floor()
+_______________________________________
+java virtual machine, securty manager, memory management, garbage collector, byte code verifier, LL(....Loader)--> combinedly Java  runtime environment
+______________________________________ 
+public static void---> why is it static? ...jvm calls main function....whenn jvm has to call main which is inside a class ...if it is not static it has to invoke that main via creating object for that class which is of no use..because at the very beginnning there are no objects for the class...if it is static main method can be called via class name...
+*** Cannot use this in static method
+
+for jvm to access the members of a class which are in another package it should be public
+______________________________________
+to call methods:
+instance method----object.method
+static methods----classname.method_
+______________________________________
+why constructor should have same name as of class?
+
+A constructor has no return type and is automatically called when an object is created....if we give a return type it is no more a constructor...if it returns there is no way to catch it or utilize it...
+
+thennn...can we write void as void also have no return type?....we r using void that meanss....methods are capable of returning but we dont want them to return so we use void...but constructor method doesnt return a value always....so no void...
+
+By giving it the same name as the class, the compiler knows this is a constructor, not a normal method.
+If the constructor had a different name, the compiler would treat it as a regular method and wouldn’t call it during object creation.
+______________________________________
+System.out.print():
+System is class available in java.lang package; out is a static reference variable of system class; print is... 
+public final class System{
+      public static final PrintStream out;   // final class cannot be inherited
+}
+
+***
+Final variable:::  once initialized cannot be mutated, they are read only variable, can be both static and non static...
+Final class::: cannot extend or inherit
+Final method:::method cannot be overriden in child class
+______________________________________
+Arrays:
+Data structure to store elements of same data type..storing data, arranging or organising it in memory in a specific way to achieve some efficiency..
+continuous storage or memory location...
+no gap between consecutive elements in an array
+Array is an object in java cuz objects has the array itself and also length variable in it...
+size created cannot be changed
+to delete array, make the reference null..
+memory in-efficient and time efficient data structure
+elements accessed using index---> accessing or reaching is called lookup
+most simple and primary ds
+
+creation of array::
+int array[10];
+int[] array = new int[size];
+int array = new int[5]{1,2,3,4,5};  //Error
+int array = new int[]{1,2,3,4,5};   //No Error
+int array = {1,2,3,4,5};
+
+2D:::
+int[][] matrix;
+matrix = new int[3][4];
+
+
+primitives in java are called by value
+remaining are called by object
+______________________________________
+Thread is a light weight process.
+Multi threading:::   multiple functions or processes functioning or running paralelly.
+Java supports multi threading.
+______________________________________
+UAT: user acceptance test
+______________________________________
+CONSTRUCTORS::::
+
+* FUNCTION OVERLOADING:
+-> Function Overloading is Compile time (static/early) binding/polymorphism.
+-> Whcih of the overloaded method must be called is decided compiler.
+-> The overloaded methods if have same arument list but different return types then it is an error. Because the change must be present at prologue and if the change is only present at epilogue.
+-> The overloaded methods must differ in their argument list either by number of arguments or data type of the arguments, or if in case if both the number of arguments and their types are same then the order must be different.
+JOb is to initialize an object
+
+Constructors-->
+
+CONSTRUCTORS:
+* A constructor is a instance method.
+* It is called/invoked always implicitly (by the JVM) as soon as an object is created (Objects gets memory allocation. That means object's reference value is created)
+* The object must have same name as that of the class so that the compiler/JVM knows which of the non static methods in the class are the constructors.
+* We can define more than 1 constructor in class. Thus all the constructors must/will have same name. This concept is caleld as FUNCTION OVERLOADING.
+* 
+Assume there is class by name Flight
+Flight() {
+
+}
+
+Flight(String code) {
+
+}
+
+main() { // Assume the systax is correct
+	Flight flight = new Flight();
+}
+
+String calcBillAmount(int, float) {
+
+}
+int calcBillAmount(int, float) {
+
+}
+
+calcBillAmount(35, 45.5f);
+
+
+ cannot be final...as all constructors are always final by nature..i.e, suppose the constructor is overrriden in sub class and we create an object of the base class ,, the overrriden constructor in subclass always becomes unreachable...it would be redundant to mark them final as they are already final...
+ cannot be static becuse constructor is working for object and it is always having this...hence cannot be static
+ 99% public in most cases but can be private
+ cannot return value ever hence its return type is always void..no return type need to be mentioned...(always implicityly final)
+ cannot be abstract cuz a class whose instance method is abstract, its object cannot be created...and even if the constructor is defined in derived class, we know its unreachable
+ abstract--->
+ if a method in the class is abstract----class must be abstract...
+ even if all methods are defined in class,,still class can be marked as abstract
+ class having all methods abstract except constructors said to be 100% abstract
+ id derived class failsto define anyone of the abstract methods of the parent class then itiitself must be  marked abstract
+ abstract class can still be used via its static members
+ abstract says u must override...final says must not...so class connot be both abstract and final
+______________________________________
+Relationships in OOP:
+ Generalisation (Inheritance)--> is-a type-of
+ Association ---> has-a part-of  
+     Aggregation(Weak or Optional association)...when the whole object is independent of the part object then it is aggregation....
+	 when the part object(Containee) and the whole object(container) can exixt independent of each other....
+	 
+	 Composition:
+	When the whole object existence is dependent on the part object existance.
+	When the containee and container cannot exist independetn of eachother.
+______________________________________
+
+n=9; 21,43,81,13,75,66,54,98,39
+x=4; y=5;
+     13,21,39,43,54,66,75,81,98
+	x=13,21,39,43    y=54,66,75,81,98
+	
+read n value
+read x value
+read y value
+read n elements of the array
+sort the array ...arrays.sort()
+p = array[y]-array[y-1]-1
+print p as output
+
+
+______________________________________
+linear, binary, bubble, selection,
+insertion, quick, merge
+avl tree,, stack, queue
+mysql-jdbc
+java concepts
+______________________________________
+
+n=9,
+18,36,5,79,50,65,30,15,33
+
+n=7
+15,23,5,30,40,55
+
+n=6
+50,40,35,30,20,15
+______________________________________
+
+Function call stack:::
+IR:INSTRUCTION REG--holds address if the current address or statement that is currently running
+
+PC:PROGRAM COUNTER--holds address of next inst to be executed
+
+SP:STACK POINTER--holds address of top frame of the stack
+
+FP:FRAME POINTER--holds address of the frame of the function which is currently running or in which the control is in
+SP and FP null it is the end of the program
+______________________________________
+
+frame:: memory allocated to a functions during run time.
+contents o frame:::
+local variables--->initially its value is empty
+function params
+(functions are called at run time)
+called Funtion adressers
+Return address
+
+
+
+
+
+
+
+
+
+
+
+
